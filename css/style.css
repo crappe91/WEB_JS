@@ -21,13 +21,12 @@ COLORES CORPORATIVOS
 .conjunto{
   position: relative;
   display:flex;
-  justify-content: center;
-  align-items: center;
 }
 
 body{
   background-image: url(../images/navigationback.png);
   position: absolute;
+  
   
 }
 
@@ -96,9 +95,17 @@ body{
 .footer{
   grid-column: 1/4;
   grid-row: 4/5;
-  opacity: 50%;
+  display: flex;
+  
 }
 
+.footer img{
+  width: 30%;
+  height: 30%;
+  margin: 0 1em;
+  float: left; 
+  
+}
 
 
 
