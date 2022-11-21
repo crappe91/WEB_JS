@@ -1,0 +1,60 @@
+/*
+
+COLORES CORPORATIVOS
+
+	.st0{fill:#078938;}
+	.st1{fill:#020203;} negro
+	.st2{fill:#4FB26F;}
+	.st3{fill:#A8D4B5;}
+
+*/
+
+
+.carousel {
+    max-width: 100%;
+    margin: 0;
+    display: flex;
+    height: 100%;
+}
+
+.carousel button{
+    color:white;
+    background-color: #4FB26F;
+    border: none;
+    width: 20px;
+    border-radius: 5px;
+}
+
+
+
+#imagen {
+    width: 100%;
+    background-size: 150px;
+    position: relative;
+    background-repeat: no-repeat;
+    
+}
+.carousel button:hover{
+    background-color:#A8D4B5;
+    color:#078938;
+}
+
+.controles{
+    position: relative;
+    bottom: 40px;
+}
+
+.controles button{
+    color:white;
+    background-color: #4FB26F;
+    border: none;
+    width: 50px;
+    border-radius: 5px;
+}
+
+.controles button:hover{
+    background-color:#A8D4B5;
+    color:#078938;
+}
+
+
