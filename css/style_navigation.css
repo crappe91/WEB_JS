@@ -42,7 +42,7 @@ nav .logo{
 nav ul{
     position: absolute;
     top: 15%;
-    left: -110%;
+    left: -500%;
     background: #013a17;
     width: 100%;
     display: block;
