@@ -66,9 +66,8 @@ body{
   padding: 0;
   position: relative;
   background-size: 100% 100%;
-  
   background-image: url(../images/MENUESCUDO.png);
-  
+  z-index: 1;
 }
 
 .navigation:hover{
@@ -80,8 +79,11 @@ body{
   grid-column: 2/4;
   background-image: url(../estadiobynd.png);
   background-size: 100% 100%;
+  z-index: 1;
   
 }
+
+
 
 .bienvenido:hover{
   background-image: url(../estadio.png);
@@ -89,24 +91,38 @@ body{
 }
 
 
-
-
-
-.bienvenido p{
-
+.bienvenido_user{
   font-weight: bold;
-  top: 15%;
-
+  top:15%;
   color:#4FB26F;
 }
+
+/*BOTON*/
 
 .center{
   position: relative;
   left:50%;
   transform:translate(-50%,-10%);
-  top:130px;
+  top:80%
+}
 
+.center button{
+  padding: 10px 20px;
+  font-size: 15px;
+  font-weight: 600;
+  color: white;
+  background:#4FB26F;
+  border:none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 5px;
+  position:relative;
 
+}
+
+.center button:hover{
+  background-color:#A8D4B5;
+  color:#078938;
 
 }
 
@@ -130,6 +146,7 @@ body{
 
 
 }
+
 
 
 .abonate{

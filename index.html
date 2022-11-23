@@ -10,7 +10,7 @@
 	<link rel="stylesheet" href="css/style_navigation.css">
 	<link rel="stylesheet" href="css/jugadores.css">
 	<link rel="stylesheet" href="css/style_seleccion_abono.css">
-
+	<link rel="stylesheet" href="css/abono.css">
 	<link rel="stylesheet" href="css/style_login.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 	<script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
@@ -26,16 +26,19 @@
 			<!--BIENVENIDO-->
 			<div class="grid-item bienvenido">
 
+				<div class="center">
+					
+					<button id="show-login"> Login </button>
+
+				</div>
+				
 				<p class="bienvenido_user">Bienvenido Bético</p>
+				
 				<div class="login">
 
 					<!--BOTON POPUP-->
 
-					<div class="center">
-
-						<button id="show-login"> Login </button>
-
-					</div>
+					
 
 					<div class="popup">
 						<div class="close-btn">&times;</div>
@@ -83,12 +86,10 @@
 						<i class="fas fa-bars"></i>
 					</label>
 					<ul>
-						<li><a href="#">REGISTRATE</a></li>
-						<li><a href="#">ABONATE</a></li>
-						<li><a href="#">ESTADIO</a></li>
-						<li><a href="#">HISTORIA</a></li>
-						<li><a href="#">JUGADORES</a></li>
-						<li><a href="#">EQUIPACIÓN</a></li>
+						<li><a href="#" id="registrate">REGISTRATE</a></li>
+						<li><a href="#" id="login">LOGIN</a></li>
+						<li><a href="#" id="verAbono">TU ABONO</a></li>
+						<li><a href="#" id="abonate">ABONATE</a></li>
 					</ul>
 
 				</nav>
@@ -722,8 +723,30 @@
 
 			<!--ABONO-->
 			<div class="grid-item abono">
+				<!--BOTON POPUP-->
 
-			</div>
+				<div class="center">
+
+					<button id="show-login3"> Ver Abono </button>
+				</div>
+
+
+					<!--BOTON POPUP-->
+					<div class="popup_abono">
+						<div class="close-btn">&times;</div>
+						<div class="abono_datos">
+
+							<p class="abono_temporada" id="abono_temporada">Temporada:</p>
+							<p class="abono_nombre" id="abono_nombre">Nombre:</p>
+							<p class="abono_apellidos" id="abono_apellidos">Apellidos:</p>
+							<p class="abono_zona" id="abono_zona">Zona:</p>
+							<p class="abono_precio" id="abono_precio">Precio:</p>
+							
+						</div>
+					</div>
+				
+				</div>
+
 
 			<!--JUGADORES-->
 			<div class="grid-item jugadores">
@@ -768,9 +791,11 @@
 		</div>
 
 	</div>
+	
+	<script src="js/navigation.js"></script>
 	<script src="js/login.js"></script>
 	<script src="js/jugadores.js"></script>
-	
+	<script src="js/abono.js"></script>
 	<script src="js/seleccion_abono.js"></script>
 	<script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
 
