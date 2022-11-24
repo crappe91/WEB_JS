@@ -9,13 +9,7 @@ COLORES CORPORATIVOS
 
 */
 
-*{
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
 
-
-}
 
 body{
     font-family: sans-serif;
@@ -25,7 +19,7 @@ body{
 .popup_abono{
     
     position: absolute;
-    top: -100%;
+    display: none;
     left:50%;
     opacity: 0;
     transform:translate(-50%,-50%) scale(1.25);
@@ -43,7 +37,7 @@ body{
     }
 
 .popup_abono.active{
-    z-index: 1;
+    display: block;
     top: 50%;
     opacity: 1;
     transform:translate(-50%,-50%) scale(1);
@@ -59,8 +53,8 @@ body{
     right: 10px;
     width: 15px;
     height: 15px;
-    background:white;
-    color:#078938;
+    background:#078938;
+    color:white;
     text-align: center;
     line-height: 15px;
     border-radius: 15px;
@@ -70,7 +64,12 @@ body{
 
 .abono_datos{
     font-size: 15px;
-    display: grid;
+    text-align: left;
+    margin-top: 90px;
+    margin-left: -15px;
+    font-weight: bold;
+
     
 }
+
 
