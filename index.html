@@ -13,12 +13,12 @@
 	<link rel="stylesheet" href="css/abono.css">
 	<link rel="stylesheet" href="css/style_login.css">
 	<link rel="stylesheet" href="css/registro.css">
+	<link rel="stylesheet" href="css/tarifa.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 	<script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
 	<link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <link rel="icon" type="image/x-icon" href="images/Logo_Real_Betis_Balompié_-_2022.svg.png">
-
+		href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+	<link rel="icon" type="image/x-icon" href="images/Logo_Real_Betis_Balompié_-_2022.svg.png">
 </head>
 
 <body>
@@ -31,18 +31,18 @@
 			<div class="grid-item bienvenido">
 
 				<div class="center">
-					
+
 					<button id="show-login"> Login </button>
 
 				</div>
-				
+
 				<p class="bienvenido_user">Bienvenido Bético</p>
-				
+
 				<div class="login">
 
 					<!--BOTON POPUP-->
 
-					
+
 
 					<div class="popup">
 						<div class="close-btn">&times;</div>
@@ -94,7 +94,7 @@
 						<li><a href="#" id="login">LOGIN</a></li>
 						<li><a href="#" id="verAbono">TU ABONO</a></li>
 						<li><a href="#" id="abonate">ABONATE</a></li>
-						<li><a href="#" id="tarifas">TARIFAS</a></li>
+						<li><a href="#" id="tarifa">TARIFAS</a></li>
 					</ul>
 
 				</nav>
@@ -107,21 +107,23 @@
 				<main class="contenido_registrate">
 					<div class="close-btn">&times;</div>
 					<form action="" class="formulario" id="formulario">
-			
+
 						<!-- Nombre -->
-			
+
 						<div class="formulario__grupo" id="grupo__nombre">
 							<label for="nombre" class="formulario__label">Nombre</label>
 							<div class="formulario__grupo-input">
-								<input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="ej: Christian">
+								<input type="text" class="formulario__input" name="nombre" id="nombre"
+									placeholder="ej: Christian">
 								<i class="formulario__validacion-estado fas fa-times-circle"></i>
 							</div>
-							<p class="formulario__input-error">El nombre debe de tener entre 4 y 16 digitos y solo puede contener
+							<p class="formulario__input-error">El nombre debe de tener entre 4 y 16 digitos y solo puede
+								contener
 								números, letras y guión bajo.</p>
 						</div>
-			
+
 						<!-- Apellidos -->
-			
+
 						<div class="formulario__grupo" id="grupo__apellidos">
 							<label for="apellidos" class="formulario__label">Apellidos</label>
 							<div class="formulario__grupo-input">
@@ -129,12 +131,13 @@
 									placeholder="ej: Aparicio Pérez">
 								<i class="formulario__validacion-estado fas fa-times-circle"></i>
 							</div>
-							<p class="formulario__input-error">El Apellido debe de tener entre 4 y 16 digitos y solo puede contener
+							<p class="formulario__input-error">El Apellido debe de tener entre 4 y 16 digitos y solo
+								puede contener
 								números, letras y guión bajo.</p>
 						</div>
-			
+
 						<!-- Password -->
-			
+
 						<div class="formulario__grupo" id="grupo__password">
 							<label for="password" class="formulario__label">Contraseña</label>
 							<div class="formulario__grupo-input">
@@ -144,9 +147,9 @@
 							</div>
 							<p class="formulario__input-error">El Password debe de tener entre 4 y 12 digitos.</p>
 						</div>
-			
+
 						<!-- Password 2 -->
-			
+
 						<div class="formulario__grupo" id="grupo__password2">
 							<label for="password2" class="formulario__label">Contraseña (confirmación)</label>
 							<div class="formulario__grupo-input">
@@ -156,9 +159,9 @@
 							</div>
 							<p class="formulario__input-error">Ambos password deben ser iguales.</p>
 						</div>
-			
+
 						<!-- Correo Electrónico -->
-			
+
 						<div class="formulario__grupo" id="grupo__correo">
 							<label for="correo" class="formulario__label">Correo Electrónico</label>
 							<div class="formulario__grupo-input">
@@ -169,9 +172,9 @@
 							<p class="formulario__input-error">El correo solo puede contener
 								números, letras, punto, guion y guión bajo.</p>
 						</div>
-			
+
 						<!-- Teléfono -->
-			
+
 						<div class="formulario__grupo" id="grupo__telefono">
 							<label for="telefono" class="formulario__label">Telefono</label>
 							<div class="formulario__grupo-input">
@@ -182,9 +185,9 @@
 							<p class="formulario__input-error">El teléfono solo puede contener
 								números y el máximo son 9 dígitos.</p>
 						</div>
-			
+
 						<!-- DNI -->
-			
+
 						<div class="formulario__grupo" id="grupo__dni">
 							<label for="dni" class="formulario__label">DNI</label>
 							<div class="formulario__grupo-input">
@@ -194,10 +197,10 @@
 							</div>
 							<p class="formulario__input-error">El dni debe contener 8 dígitos y una letra</p>
 						</div>
-			
-						
+
+
 						<!-- IBAN -->
-			
+
 						<div class="formulario__grupo" id="grupo__iban">
 							<label for="iban" class="formulario__label">IBAN</label>
 							<div class="formulario__grupo-input">
@@ -207,36 +210,37 @@
 							</div>
 							<p class="formulario__input-error">El IBAN es incorrecto.</p>
 						</div>
-			
+
 						<!-- Términos y condiciones -->
-			
+
 						<div class="formulario__grupo-terminos" id="grupo__terminos">
 							<label class="formulario__label">
 								<input type="checkbox" class="formulario__checkbox" name="terminos" id="terminos">
 								Acepto los términos y condiciones
 							</label>
 							<p class="formulario__input-error">Debe aceptar los términos y condiciones.</p>
-			
+
 						</div>
-			
+
 						<!-- WARNING -->
-			
+
 						<div class="formulario__msg" id="formulario__msg">
-			
+
 							<p><i class="fas fa-exclamation-triangle"></i><b>Error:</b> Por favor rellena el formulario
 								correctamente.</p>
 						</div>
-			
+
 						<!-- ENVIAR -->
-			
+
 						<div class="formulario__grupo formulario__grupo-btn-enviar">
 							<button type="submit" class="formulario__btn">Enviar</button>
-							<p class="formulario__msg-exito" id="formulario__msg-exito">El formulario se envio correctamente</p>
+							<p class="formulario__msg-exito" id="formulario__msg-exito">El formulario se envio
+								correctamente</p>
 						</div>
-			
+
 					</form>
 				</main>
-			
+
 			</div>
 
 
@@ -759,107 +763,26 @@
 
 					<div class="seleccionGrada" id="seleccionGrada">
 						<p id="nombreGrada"><b>&nbsp&nbsp Selecciona una grada</b> </p>
+						<div class="categoria" id="categoria">
+							
+								<label for="infantil">Infantil</label>
+								<input type="radio" id="infantil" value="infantil" name="categoria">
+							
+								<label for="juvenil">Juvenil</label>
+								<input type="radio" id="juvenil" value="juvenil" name="categoria">
+
+								<label for="adulto">Adulto</label>
+								<input type="radio" id="adulto" value="adulto" name="categoria">
+
+						</div>
 					</div>
-					<!-- 							
-							<div class="tarifa" id="tarifa">
-							
-								<h4>CAMPAÑA DE ABONADOS</h4>
-								<h5>TEMPORADA 2022-2023</h5>
-							
-							<table>
-							  <tr>
-								<th>GRADA</th>
-								<th>INFANTIL</th>
-								<th>JUVENIL</th>
-								<th>ADULTO</th>
-							  </tr>
-							  <tr>
-								<td>PREFERENCIA - 2ºANFITEATRO</td>
-								<td>115 €</td>
-								<td>305 €</td>
-								<td>600 €</td>
-							  </tr>
-							
-							  <tr>
-								<td>PREFERENCIA - 1ºANFITEATRO</td>
-								<td>115 €</td>
-								<td>370 €</td>
-								<td>1065 €</td>
-							  </tr>
-							
-							  <tr>
-								<td>PREFERENCIA - GRADA BAJA</td>
-								<td>115 €</td>
-								<td>340 €</td>
-								<td>745 €</td>
-							  </tr>
-							
-							  <tr>
-								<td>FONDO - 2ºANFITEATRO</td>
-								<td>115 €</td>
-								<td>250 €</td>
-								<td>410 €</td>
-							  </tr>
-							
-							  <tr>
-								<td>FONDO - 1ºANFITEATRO</td>
-								<td>115 €</td>
-								<td>280 €</td>
-								<td>545 €</td>
-							  </tr>
-							
-							  <tr>
-								<td>FONDO - GRADA BAJA</td>
-								<td>115 €</td>
-								<td>265 €</td>
-								<td>480 €</td>
-							  </tr>
-							
-							  <tr>
-								<td>GOL NORTE - 2ºANFITEATRO</td>
-								<td>115 €</td>
-								<td>220 €</td>
-								<td>350 €</td>
-							  </tr>
-							
-							  <tr>
-								<td>GOL NORTE - 1ºANFITEATRO</td>
-								<td>115 €</td>
-								<td>240 €</td>
-								<td>445 €</td>
-							  </tr>
-							
-							  <tr>
-								<td>GOL NORTE - GRADA BAJA</td>
-								<td>115 €</td>
-								<td>225 €</td>
-								<td>380 €</td>
-							  </tr>
-							
-							  <tr>
-								<td>GOL SUR - 2ºANFITEATRO</td>
-								<td>115 €</td>
-								<td>220 €</td>
-								<td>360 €</td>
-							  </tr>
-							
-							  <tr>
-								<td>GOL SUR - 1ºANFITEATRO</td>
-								<td>115 €</td>
-								<td>240 €</td>
-								<td>445 €</td>
-							  </tr>
-							
-							  <tr>
-								<td>GOL SUR - GRADA BAJA</td>
-								<td>115 €</td>
-								<td>150 €</td>
-								<td>305 €</td>
-							  </tr>
-							
-							</table>
-							
-							</div> -->
+
+					<div class="center">
+
+						<button id="compra_abono"> Continuar </button>
+					</div>
+
+
 
 
 				</div>
@@ -876,21 +799,131 @@
 				</div>
 
 
-					<!--BOTON POPUP-->
-					<div class="popup_abono">
-						<div class="close-btn">&times;</div>
-						<div class="abono_datos">
+				<!--BOTON POPUP-->
+				<div class="popup_abono">
+					<div class="close-btn">&times;</div>
+					<div class="abono_datos">
 
-							<p class="abono_temporada" id="abono_temporada">Temporada:</p>
-							<p class="abono_nombre" id="abono_nombre">Nombre:</p>
-							<p class="abono_apellidos" id="abono_apellidos">Apellidos:</p>
-							<p class="abono_zona" id="abono_zona">Zona:</p>
-							<p class="abono_precio" id="abono_precio">Precio:</p>
-							
-						</div>
+						<p class="abono_temporada" id="abono_temporada">Temporada:</p>
+						<p class="abono_nombre" id="abono_nombre">Nombre:</p>
+						<p class="abono_apellidos" id="abono_apellidos">Apellidos:</p>
+						<p class="abono_zona" id="abono_zona">Zona:</p>
+						<p class="abono_precio" id="abono_precio">Precio:</p>
+
 					</div>
-				
 				</div>
+
+			</div>
+
+
+			<!--TARIFA-->
+
+
+			<div class="contenedor_tarifa">
+				<div class="close-btn">&times;</div>
+
+				<h3>CAMPAÑA DE ABONADOS</h3>
+				<h4>TEMPORADA 2022-2023</h4>
+
+				<table>
+					<tr>
+						<th><b>GRADA</b></th>
+						<th><b>INFANTIL</b></th>
+						<th><b>JUVENIL</b></th>
+						<th><b>ADULTO</b></th>
+					</tr>
+					<tr>
+						<td><b>PREFERENCIA - 2ºANFITEATRO</b></td>
+						<td>115 €</td>
+						<td>305 €</td>
+						<td>600 €</td>
+					</tr>
+
+					<tr>
+						<td><b>PREFERENCIA - 1ºANFITEATRO</b></td>
+						<td>115 €</td>
+						<td>370 €</td>
+						<td>1065 €</td>
+					</tr>
+
+					<tr>
+						<td><b>PREFERENCIA - GRADA BAJA</b></td>
+						<td>115 €</td>
+						<td>340 €</td>
+						<td>745 €</td>
+					</tr>
+
+					<tr>
+						<td><b>FONDO - 2ºANFITEATRO</b></td>
+						<td>115 €</td>
+						<td>250 €</td>
+						<td>410 €</td>
+					</tr>
+
+					<tr>
+						<td><b>FONDO - 1ºANFITEATRO</b></td>
+						<td>115 €</td>
+						<td>280 €</td>
+						<td>545 €</td>
+					</tr>
+
+					<tr>
+						<td><b>FONDO - GRADA BAJA</b></td>
+						<td>115 €</td>
+						<td>265 €</td>
+						<td>480 €</td>
+					</tr>
+
+					<tr>
+						<td><b>NORTE - 2ºANFITEATRO</b></td>
+						<td>115 €</td>
+						<td>220 €</td>
+						<td>350 €</td>
+					</tr>
+
+					<tr>
+						<td><b>GOL NORTE - 1ºANFITEATRO</b></td>
+						<td>115 €</td>
+						<td>240 €</td>
+						<td>445 €</td>
+					</tr>
+
+					<tr>
+						<td><b>NORTE - GRADA BAJA</b></td>
+						<td>115 €</td>
+						<td>225 €</td>
+						<td>380 €</td>
+					</tr>
+
+					<tr>
+						<td><b>GOL SUR - 2ºANFITEATRO</b></td>
+						<td>115 €</td>
+						<td>220 €</td>
+						<td>360 €</td>
+					</tr>
+
+					<tr>
+						<td><b>GOL SUR - 1ºANFITEATRO</b></td>
+						<td>115 €</td>
+						<td>240 €</td>
+						<td>445 €</td>
+					</tr>
+
+					<tr>
+						<td><b>GOL SUR - GRADA BAJA</b></td>
+						<td>115 €</td>
+						<td>150 €</td>
+						<td>305 €</td>
+					</tr>
+
+				</table>
+
+
+			</div>
+
+
+
+
 
 
 			<!--JUGADORES-->
@@ -943,7 +976,7 @@
 	<script src="js/abono.js"></script>
 	<script src="js/seleccion_abono.js"></script>
 	<script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
-	
+
 
 </body>
 
