@@ -22,3 +22,7 @@ document.querySelector("#verAbono").addEventListener("click",function(){
 });
 
 //abrir registrate
+
+document.querySelector("#registrate").addEventListener("click",function(){
+    document.querySelector(".contenedor_registrate").classList.add("active");
+});

@@ -17,11 +17,15 @@ COLORES CORPORATIVOS
 }
 
 .conjunto{
-  width: 96%;
-  max-width: 35%;
-  position:relative;
-  margin-top: 5%;
-  margin-left: 35%;
+  width: 635px;
+  position: relative;
+  margin: auto;
+  left: 15px;
+
+
+
+  padding-top: 1.5em;
+  padding-bottom: 4em;
 
 
 }
@@ -38,14 +42,15 @@ body{
 .grid-container {
   display: grid;
   gap: 0.5em;
-  padding: 1em;
-  grid-template-columns: repeat(3, 1fr);
+  /* grid-template-columns: repeat(3, 1fr); */
   grid-template-columns: 200px 185px 200px;
 
-  grid-template-rows: repeat(4, 1fr);
+  /* grid-template-rows: repeat(4, 1fr); */
   grid-template-rows: 200px 150px 230px 100px;
-
-
+  width: 635px;
+  margin-top: 50px;
+  margin-bottom: 100px;
+  margin: auto;
   
 }
 
@@ -67,7 +72,7 @@ body{
   position: relative;
   background-size: 100% 100%;
   background-image: url(../images/MENUESCUDO.png);
-  z-index: 1;
+  
 }
 
 .navigation:hover{
@@ -79,7 +84,7 @@ body{
   grid-column: 2/4;
   background-image: url(../estadiobynd.png);
   background-size: 100% 100%;
-  z-index: 1;
+  
   
 }
 

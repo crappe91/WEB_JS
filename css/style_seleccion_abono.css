@@ -29,7 +29,6 @@ border-radius: 10px;
 transition: top 0ms ease-in-out 200ms,
             opacity 200ms ease-in-out 0ms,
             transform 20ms ease-in-out 0ms;
-            
 }
 
 
@@ -47,7 +46,6 @@ transition: top 0ms ease-in-out 200ms,
     outline: none;
     cursor: pointer;
     border-radius: 5px;
-    z-index: 1;
 
 }
 

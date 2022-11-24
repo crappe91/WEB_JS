@@ -12,8 +12,12 @@
 	<link rel="stylesheet" href="css/style_seleccion_abono.css">
 	<link rel="stylesheet" href="css/abono.css">
 	<link rel="stylesheet" href="css/style_login.css">
+	<link rel="stylesheet" href="css/registro.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 	<script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="icon" type="image/x-icon" href="images/Logo_Real_Betis_Balompié_-_2022.svg.png">
 
 </head>
 
@@ -90,10 +94,151 @@
 						<li><a href="#" id="login">LOGIN</a></li>
 						<li><a href="#" id="verAbono">TU ABONO</a></li>
 						<li><a href="#" id="abonate">ABONATE</a></li>
+						<li><a href="#" id="tarifas">TARIFAS</a></li>
 					</ul>
 
 				</nav>
 			</div>
+
+
+			<!-- REGISTRO -->
+
+			<div class="contenedor_registrate">
+				<main class="contenido_registrate">
+					<div class="close-btn">&times;</div>
+					<form action="" class="formulario" id="formulario">
+			
+						<!-- Nombre -->
+			
+						<div class="formulario__grupo" id="grupo__nombre">
+							<label for="nombre" class="formulario__label">Nombre</label>
+							<div class="formulario__grupo-input">
+								<input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="ej: Christian">
+								<i class="formulario__validacion-estado fas fa-times-circle"></i>
+							</div>
+							<p class="formulario__input-error">El nombre debe de tener entre 4 y 16 digitos y solo puede contener
+								números, letras y guión bajo.</p>
+						</div>
+			
+						<!-- Apellidos -->
+			
+						<div class="formulario__grupo" id="grupo__apellidos">
+							<label for="apellidos" class="formulario__label">Apellidos</label>
+							<div class="formulario__grupo-input">
+								<input type="text" class="formulario__input" name="apellidos" id="apellidos"
+									placeholder="ej: Aparicio Pérez">
+								<i class="formulario__validacion-estado fas fa-times-circle"></i>
+							</div>
+							<p class="formulario__input-error">El Apellido debe de tener entre 4 y 16 digitos y solo puede contener
+								números, letras y guión bajo.</p>
+						</div>
+			
+						<!-- Password -->
+			
+						<div class="formulario__grupo" id="grupo__password">
+							<label for="password" class="formulario__label">Contraseña</label>
+							<div class="formulario__grupo-input">
+								<input type="password" class="formulario__input" name="password" id="password"
+									placeholder="ej: contraseña">
+								<i class="formulario__validacion-estado fas fa-times-circle"></i>
+							</div>
+							<p class="formulario__input-error">El Password debe de tener entre 4 y 12 digitos.</p>
+						</div>
+			
+						<!-- Password 2 -->
+			
+						<div class="formulario__grupo" id="grupo__password2">
+							<label for="password2" class="formulario__label">Contraseña (confirmación)</label>
+							<div class="formulario__grupo-input">
+								<input type="password" class="formulario__input" name="password2" id="password2"
+									placeholder="confirme la contraseña ">
+								<i class="formulario__validacion-estado fas fa-times-circle"></i>
+							</div>
+							<p class="formulario__input-error">Ambos password deben ser iguales.</p>
+						</div>
+			
+						<!-- Correo Electrónico -->
+			
+						<div class="formulario__grupo" id="grupo__correo">
+							<label for="correo" class="formulario__label">Correo Electrónico</label>
+							<div class="formulario__grupo-input">
+								<input type="email" class="formulario__input" name="correo" id="correo"
+									placeholder="ej: correo@correo.com">
+								<i class="formulario__validacion-estado fas fa-times-circle"></i>
+							</div>
+							<p class="formulario__input-error">El correo solo puede contener
+								números, letras, punto, guion y guión bajo.</p>
+						</div>
+			
+						<!-- Teléfono -->
+			
+						<div class="formulario__grupo" id="grupo__telefono">
+							<label for="telefono" class="formulario__label">Telefono</label>
+							<div class="formulario__grupo-input">
+								<input type="text" class="formulario__input" name="telefono" id="telefono"
+									placeholder="ej: 666 555 444">
+								<i class="formulario__validacion-estado fas fa-times-circle"></i>
+							</div>
+							<p class="formulario__input-error">El teléfono solo puede contener
+								números y el máximo son 9 dígitos.</p>
+						</div>
+			
+						<!-- DNI -->
+			
+						<div class="formulario__grupo" id="grupo__dni">
+							<label for="dni" class="formulario__label">DNI</label>
+							<div class="formulario__grupo-input">
+								<input type="text" class="formulario__input" name="dni" id="dni"
+									placeholder="ej: 30313233M">
+								<i class="formulario__validacion-estado fas fa-times-circle"></i>
+							</div>
+							<p class="formulario__input-error">El dni debe contener 8 dígitos y una letra</p>
+						</div>
+			
+						
+						<!-- IBAN -->
+			
+						<div class="formulario__grupo" id="grupo__iban">
+							<label for="iban" class="formulario__label">IBAN</label>
+							<div class="formulario__grupo-input">
+								<input type="text" class="formulario__input" name="iban" id="iban"
+									placeholder="ej: ES7530044683421744327437">
+								<i class="formulario__validacion-estado fas fa-times-circle"></i>
+							</div>
+							<p class="formulario__input-error">El IBAN es incorrecto.</p>
+						</div>
+			
+						<!-- Términos y condiciones -->
+			
+						<div class="formulario__grupo-terminos" id="grupo__terminos">
+							<label class="formulario__label">
+								<input type="checkbox" class="formulario__checkbox" name="terminos" id="terminos">
+								Acepto los términos y condiciones
+							</label>
+							<p class="formulario__input-error">Debe aceptar los términos y condiciones.</p>
+			
+						</div>
+			
+						<!-- WARNING -->
+			
+						<div class="formulario__msg" id="formulario__msg">
+			
+							<p><i class="fas fa-exclamation-triangle"></i><b>Error:</b> Por favor rellena el formulario
+								correctamente.</p>
+						</div>
+			
+						<!-- ENVIAR -->
+			
+						<div class="formulario__grupo formulario__grupo-btn-enviar">
+							<button type="submit" class="formulario__btn">Enviar</button>
+							<p class="formulario__msg-exito" id="formulario__msg-exito">El formulario se envio correctamente</p>
+						</div>
+			
+					</form>
+				</main>
+			
+			</div>
+
 
 			<!--ABONATE-->
 			<div class="grid-item abonate">
@@ -791,14 +936,14 @@
 		</div>
 
 	</div>
-	
+	<script src="js/registro.js"></script>
 	<script src="js/navigation.js"></script>
 	<script src="js/login.js"></script>
 	<script src="js/jugadores.js"></script>
 	<script src="js/abono.js"></script>
 	<script src="js/seleccion_abono.js"></script>
 	<script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
-
+	
 
 </body>
 
