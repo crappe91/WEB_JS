@@ -10,6 +10,7 @@ var grada="";
     $("#nombreGrada").empty();
     grada = "gF2";
     $(".seleccionGrada p").append("<b>&nbsp&nbspHa seleccionado:<br>&nbsp FONDO SEGUNDO ANFITEATRO</b>.");
+
     });
   
     $("#F1").click(function(){
@@ -89,7 +90,7 @@ var grada="";
 
   $("path").blur(function(){
     $("#nombreGrada").empty();
-    grada="";
+    // grada="";
       $(".seleccionGrada p").append("<b>&nbsp&nbsp Selecciona una grada</b>");
     });
 
@@ -108,15 +109,34 @@ var grada="";
   });
 
 
+//ver tarifa de precios
+
+document.querySelector("#verTarifa").addEventListener("click", function(){
+  
+  document.querySelector(".contenedor_tarifa").classList.add("active");
+})
+
+
+
+
+
   //selección
 
-  // IF (grada !=""){
-  //   $("#SB").click(function(){
-  //     $("#nombreGrada").empty();
-  //     grada = "gSB"; 
-  //       $(".seleccionGrada p").append("<b>&nbsp&nbspHa seleccionado:<br>&nbsp GOL SUR TRIBUNA BAJA</b>.");
-  //     });
-  // };
+  document.querySelector("#continuar").addEventListener("click", function(){
+    
+    if (grada!=""){
+      console.log(grada)
+      
+      document.querySelector(".mapadiv").classList.remove("active");
+    }else{
+      $("#nombreGrada").empty();
+      $(".seleccionGrada p").append("<b>&nbsp&nbsp Debe seleccionar una grada</b>");
+    }
+
+    
+  })
+
+
 
 
 

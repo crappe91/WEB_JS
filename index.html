@@ -50,26 +50,26 @@
 							<div class="form-element">
 
 								<label for="email">Email</label>
-								<input type="text" id="email" placeholder="Introduzca email:"></input>
+								<input type="text" id="email_login" placeholder="Introduzca email:"></input>
 
 							</div>
 
 							<div class="form-element">
 
 								<label for="password">Contraseña</label>
-								<input type="password" id="password" placeholder="Introduzca contraseña:"></input>
+								<input type="password" id="password_login" placeholder="Introduzca contraseña:"></input>
 
 							</div>
 
 							<div class="form-element">
 
-								<input type="checkbox" id="recordar"></input>
-								<label for="recordar">Recordar</label>
 								<div class="form-element">
-									<button>Entrar</button>
+									<button type="submit" id="entrar_login">Entrar</button>
+									<p class="formulario__msg-exito" id="formulario__msg-exito">El formulario se envio
+										correctamente</p>
 								</div>
 								<div class="form-element">
-									<a href="#">¿Olvidaste tu contraseña?</a>
+									<a href="#" id="noRegistrado">¿No estas registrado?</a>
 								</div>
 							</div>
 
@@ -77,6 +77,10 @@
 					</div>
 				</div>
 			</div>
+
+
+
+		
 
 
 			<!--NAVIGATION-->
@@ -761,25 +765,32 @@
 						</g>
 					</svg>
 
+<!-- SELECCIÓN GRADA -->
+
 					<div class="seleccionGrada" id="seleccionGrada">
 						<p id="nombreGrada"><b>&nbsp&nbsp Selecciona una grada</b> </p>
+						
+						<!-- SELECCION CATEGORIA -->
+
 						<div class="categoria" id="categoria">
-							
-								<label for="infantil">Infantil</label>
 								<input type="radio" id="infantil" value="infantil" name="categoria">
-							
-								<label for="juvenil">Juvenil</label>
+								<label for="infantil">Infantil</label>
+								
 								<input type="radio" id="juvenil" value="juvenil" name="categoria">
-
-								<label for="adulto">Adulto</label>
+								<label for="juvenil">Juvenil</label>
+								
 								<input type="radio" id="adulto" value="adulto" name="categoria">
-
+								<label for="adulto">Adulto</label>
+								
 						</div>
+
+						<a class="verTarifa" id="verTarifa" href="#">Ver tarifa de precios</a>
 					</div>
 
 					<div class="center">
+						<p id="haSeleccionado"><b> </b></p>
 
-						<button id="compra_abono"> Continuar </button>
+						<button id="continuar"> Continuar </button>
 					</div>
 
 

@@ -1,12 +1,11 @@
 window.onload = function () {
     // Variables
     const IMAGENES = [
-        '1.png',
-        '2.png',
-        '3.png',
-        '4.png',
-        '5.png'
-        
+        'images/jugadores/1.png',
+        'images/jugadores/2.png',
+        'images/jugadores/3.png',
+        'images/jugadores/4.png',
+        'images/jugadores/5.png'
     ];
 
 
