@@ -82,7 +82,7 @@ body{
 
 .bienvenido{
   grid-column: 2/4;
-  background-image: url(../estadiobynd.png);
+  background-image: url(../images/estadiobynd.png);
   background-size: 100% 100%;
   
   
@@ -91,7 +91,7 @@ body{
 
 
 .bienvenido:hover{
-  background-image: url(../estadio.png);
+  background-image: url(../images/estadio.png);
   color:white;
 }
 
@@ -99,7 +99,7 @@ body{
 .bienvenido_user{
   font-weight: bold;
   top:15%;
-  color:#4FB26F;
+  color:#1e0677;
 }
 
 /*BOTON*/
@@ -145,7 +145,7 @@ body{
   grid-column: 1/3;
   grid-row: 3/4;
   position: relative;
-  background-image: url(../images/abono/abono_del.png);
+  background-image: url(../images/abono/abono.png);
   background-repeat: no-repeat;
   background-size: 100% 100%;
 
